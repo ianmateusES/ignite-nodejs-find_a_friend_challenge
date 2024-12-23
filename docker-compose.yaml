@@ -1,0 +1,9 @@
+services:
+  api-find-a-friend-pg:
+    image: postgres:17.2-alpine3.21
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=app
